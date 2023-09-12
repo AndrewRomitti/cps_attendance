@@ -28,15 +28,15 @@ function redirectUser(){
 }
 
 function redirectHickman(){
-    window.location.href = "/hhs.html";
+    window.location.href = "/cps_attendance/hhs.html";
 }
 
 function redirectRockBridge(){
-    window.location.href = "/rbhs.html";
+    window.location.href = "/cps_attendance/rbhs.html";
 }
 
 function redirectBattle(){
-    window.location.href = "/bhs.html";
+    window.location.href = "/cps_attendance/bhs.html";
 }
 
 async function submitAttendance() {
