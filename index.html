@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #e74c3c;
+        }
+
+        input[type="submit"] {
+            background-color: #27ae60;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #219653;
+        }
+    </style>
+
+    <script src="handler.js"></script>
+
+</head>
+<body>
+    <p>Select the school you attend</p>
+    <input type="radio" name="school" id="rb_school" value="RockBridge" />
+    <label for="rb_school">Rock Bridge</label>
+
+    <input type="radio" name="school" id="hm_school" value="Hickman" />
+    <label for="hm_school">Hickman</label>
+
+    <input type="radio" name="school" id="b_school" value="Battle" />
+    <label for="b_school">Battle</label>
+
+    <input type="submit" onclick="redirectUser()" value="Submit" />
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* External CSS file for the purple theme */
+
+/* Overall page styling */
+body.purple-theme {
+    background-color: #CF9FFF; /* Purple background color */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Input styling */
+.purple-input {
+    padding: 10px;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px;
+    background-color: #527532
+; /* Purple background color */
+    color: #ffffff; /* White text color */
+    margin: 10px;
+    width: 200px;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+}
+
+/* Change input background and text color when focused */
+.purple-input:focus {
+    background-color: #ffffff; /* White background when focused */
+    color: #000000; /* Black text color when focused */
+}
+
+/* Button styling */
+.purple-button {
+    background-color: #527532
+    ; /* Purple button color */
+    color: #ffffff; /* White text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hover effect for the button */
+.purple-button:hover {
+    background-color: #96B25D
+}
+
+/* Form background color */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}

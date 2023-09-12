@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHS Speech and Debate Attendance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="hss_styles.css"> <!-- Link to an external CSS file -->
+    <script src="handler.js"></script>
+    <style>
+        /* Center everything vertically and horizontally */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #dd9301; /* Purple background color */
+            color: #ffffff; /* White text color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%; /* Ensure the image doesn't exceed its container */
+        }
+    </style>
+</head>
+<body onload="setSchool('HHS')">
+    <img src="Hickman_banner.png">
+    <h1 style="color: black;">Enter your name for attendance!</h1>
+    <input id="name" type="text" class="purple-input" /> <!-- Added a class for the input -->
+    <button onclick="submitAttendance()" class="purple-button">Submit</button> <!-- Added a class for the button -->
+</body>
+</html>
