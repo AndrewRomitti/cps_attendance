@@ -7,6 +7,13 @@ const formEntryNumbers = {
 
 function setSchool(school_arg) {
     school = school_arg
+    var textInput = document.getElementById('name');
+    textInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        submitAttendance();
+        // Perform desired actions here
+      }
+    });
 }
 
 function redirectUser(){
@@ -56,6 +63,7 @@ async function submitAttendance() {
                 button: "Continue",
            
               });
+            document.getElementById("name").value = "";
           if (response.ok) {
             alert("Sent!")
             console.log("Response submitted successfully");
